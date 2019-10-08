@@ -16,7 +16,6 @@ public GameObject MPannel;
     
 StartCoroutine("LoseTime");
 Time.timeScale = 1; 
-MPannel = GameObject.Find("Main_Menu_Pannel");
 MPannel.SetActive(false);
     }
 
