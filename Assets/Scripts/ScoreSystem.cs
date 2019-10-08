@@ -7,6 +7,10 @@ public class ScoreSystem : MonoBehaviour
 public int Score;
 public Text countUp;
 public GameObject Apple;
+public ParticleSystem AppleCollectedPS;
+//Audio Stuff
+public AudioSource AudioSource;
+public AudioClip GetApple;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,15 +24,12 @@ public GameObject Apple;
     }
     void OnCollisionEnter2D(Collision2D other)
     {
-    if(other.gameObject.tag == "Ground")
-        {
-        Score = 0;
-    Destroy(gameObject);
-        }
-    if(other.gameObject.tag == "Player")
+    
+    if(other.gameObject.tag == "Apple")//adds score,audio and emits particle on apple collision
         {
         Score += 1; 
-    Destroy(gameObject,0.5f);
+        AudioSource.PlayOneShot(GetApple);
+        AppleCollectedPS.Emit(200);
         }
     }
 }

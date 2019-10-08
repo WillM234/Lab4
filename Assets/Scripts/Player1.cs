@@ -16,11 +16,11 @@ rb2d = GetComponent<Rigidbody2D>();
     // Update is called once per frame
     void Update()
     {
-      if (Input.GetKey(KeyCode.A))//move right
+      if (Input.GetKey(KeyCode.D))//move right
         {
             transform.Translate(Vector2.right * speed);
         }
-    if (Input.GetKey(KeyCode.D))//move left
+    if (Input.GetKey(KeyCode.A))//move left
         {
             transform.Translate(Vector2.left * speed);
         }
