@@ -8,6 +8,9 @@ public int Score;
 public Text countUp;
 public GameObject Apple;
 public ParticleSystem AppleCollectedPS;
+//Audio Stuff
+public AudioSource AudioSource;
+public AudioClip GetApple;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,9 +25,10 @@ public ParticleSystem AppleCollectedPS;
     void OnCollisionEnter2D(Collision2D other)
     {
     
-    if(other.gameObject.tag == "Apple")
+    if(other.gameObject.tag == "Apple")//adds score,audio and emits particle on apple collision
         {
         Score += 1; 
+        AudioSource.PlayOneShot(GetApple);
         AppleCollectedPS.Emit(200);
         }
     }
