@@ -237,6 +237,8 @@ GameObject:
   - component: {fileID: 279146085617691876}
   - component: {fileID: 5120654027654466206}
   - component: {fileID: 5650387875462461744}
+  - component: {fileID: 8532563668075971311}
+  - component: {fileID: 1979278972527919906}
   m_Layer: 5
   m_Name: Quit_GameButton
   m_TagString: Untagged
@@ -344,9 +346,44 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5120654027654466206}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1979278972527919906}
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &8532563668075971311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2448140790754141699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a7ffc9683c7b420ea6e837bc78d28ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1979278972527919906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2448140790754141699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac6cd040413fa409894b45d69c3935a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2701247696429687241
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,6 +475,7 @@ GameObject:
   - component: {fileID: 1655136569344787023}
   - component: {fileID: 315340827164830307}
   - component: {fileID: 1528686613374961907}
+  - component: {fileID: 7748229978007772189}
   m_Layer: 5
   m_Name: Main_MenuButton
   m_TagString: Untagged
@@ -545,9 +583,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 315340827164830307}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7748229978007772189}
+        m_MethodName: LoadByIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &7748229978007772189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2966930292731639663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a7ffc9683c7b420ea6e837bc78d28ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3206889730156561142
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,6 +781,7 @@ GameObject:
   - component: {fileID: 532615490159730066}
   - component: {fileID: 7512428479282312811}
   - component: {fileID: 1887923700122428803}
+  - component: {fileID: 7583509281993623457}
   m_Layer: 5
   m_Name: Restart_LevelButton
   m_TagString: Untagged
@@ -827,9 +889,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7512428479282312811}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7583509281993623457}
+        m_MethodName: LoadByIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &7583509281993623457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5177797168876836782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a7ffc9683c7b420ea6e837bc78d28ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5195855741291477464
 GameObject:
   m_ObjectHideFlags: 0
